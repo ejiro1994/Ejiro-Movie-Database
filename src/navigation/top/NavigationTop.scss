@@ -1,0 +1,27 @@
+.topNav {
+    border-bottom: rgba(255, 255, 255, 0.2) 1px solid;
+	height: calc(var(--margin-size) - var(--nav-font-size));
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.5rem;
+    width: 100%;
+
+    ul li {
+        list-style-type: none;
+
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #fff;
+        }
+    }
+}
+ul.navCategories {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    font-size: var(--nav-font-size);
+
+}
+
