@@ -4,39 +4,50 @@
     margin-left: var(--margin-size);
     margin-right: var(--margin-size);
     // background:red;
-	height: calc(100vh - (var(--margin-size) - var(--nav-font-size)));
-	
-	display: grid;
+    height: calc(100vh - (var(--margin-size) - var(--nav-font-size)));
+
+    display: grid;
     // width: 100%;
     grid-template-columns: repeat(auto-fill, minmax(var(--card-width), 1fr));
-    grid-auto-rows: calc((var(--card-width)/2)*3);
+    grid-auto-rows: calc((var(--card-width) / 2) * 3);
     padding: 1rem;
-	grid-gap: 1rem;
-	// background: red;
+    grid-gap: 1rem;
+    // background: red;
 }
 
 @media only screen and (max-width: 960px) {
     .renderMoviesWindow {
-		margin-left: 0;
-		margin-right:0;
+        margin-left: 0;
+        margin-right: 0;
 
-
-		
-
-		display: grid;
-    // width: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(var(--card-width), 1fr));
-    grid-auto-rows: calc((var(--card-width)/2)*3);
-    // padding: 2rem;
-    grid-gap: 1rem;
+        display: grid;
+        // width: 100%;
+        grid-template-columns: repeat(
+            auto-fill,
+            minmax(var(--card-width), 1fr)
+        );
+        grid-auto-rows: calc((var(--card-width) / 2) * 3);
+        // padding: 2rem;
+        grid-gap: 1rem;
     }
 }
+@media only screen and (max-width: 600px) {
+    .renderMoviesWindow {
+        margin-left: 0;
+        margin-right: 0;
 
+        display: grid;
+        // width: 100%;
+        grid-template-columns: repeat(
+            auto-fill,
+            minmax(var(--card-width), 1fr)
+        );
+        grid-auto-rows: calc((var(--card-width) / 2) * 3);
+        padding: 0rem;
+        grid-gap: 0rem;
+    }
 
-@media only screen and (max-width: 200px) {
-
-
-	.card .wrapper {
-		border-radius: 0px;
-	}
+    .card > .wrapper {
+        border-radius: 0px;
+    }
 }

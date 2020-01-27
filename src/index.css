@@ -16,7 +16,9 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: #111;
-	background:linear-gradient(to left, rgb(101, 78, 163), rgb(234, 175, 200)) #000;
+    background:linear-gradient(to left, rgb(101, 78, 163), rgb(234, 175, 200)) #000;
+	/* background-repeat: no-repeat; */
+    
 
     color: #fff;
 }
@@ -36,7 +38,11 @@ body {
         right: 0;
     }
 
+
+
     i {
         display: none;
     }
+
+    
 }

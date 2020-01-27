@@ -4,51 +4,39 @@ import "./MovieItem.scss";
 function MovieItem() {
     return (
         // <div className="movieCard">
-            <div className="movie-item card">
-                <div className="wrapper">
-                    <div className="header">
-                        <div className="date">
-                            <span className="day">12</span>
-                            <span className="month">Aug</span>
-                            <span className="year">2016</span>
-                        </div>
-                        <ul className="menu-content">
-                            <li>
-                                <i href="/" className="fa fa-bookmark-o"></i>
-                            </li>
-                            <li>
-                                <a href="/" className="fa fa-heart-o">
-                                    <span>18</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/" className="fa fa-comment-o">
-                                    <span>3</span>
-                                </a>
-                            </li>
-                        </ul>
+        <div className="movie-item card">
+            <div className="wrapper">
+                <div className="header">
+                    <div className="date">
+                        <span className="day">Date</span>
+                        <span className="month">Of</span>
+                        <span className="year">Release</span>
                     </div>
-                    <div className="data">
-                        <div className="content">
-                            <span className="author">Jane Doe</span>
-                            <h1 className="title">
-                                <a href="/">
-                                    Stranger Things: The sound of the Upside
-                                    Down
-                                </a>
-                            </h1>
-                            <p className="text">
-                                The antsy bingers of Netflix will eagerly
-                                anticipate the digital release of the Survive
-                                soundtrack, out today.
-                            </p>
-                            <a href="/" className="button">
-                                Read more
-                            </a>
-                        </div>
+                    <ul className="menu-content">
+                        <li>
+                            <i href="/" className="fa fa-bookmark-o"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div className="data">
+                    <div className="content">
+                        <span className="author">category</span>
+                        <h1 className="title">
+                            <a href="/">Title of movie</a>
+                        </h1>
+                        <p className="text">
+                            description do excepteur amet excepteur incididunt
+                            do exercitation tempor consequat mollit officia ad
+                            voluptate. Magna veniam sunt sunt enim enim ex elit
+                            eiusmod. Esse
+                        </p>
+                        <a href="/" className="button">
+                            Read more
+                        </a>
                     </div>
                 </div>
             </div>
+        </div>
         // </div>
     );
 }

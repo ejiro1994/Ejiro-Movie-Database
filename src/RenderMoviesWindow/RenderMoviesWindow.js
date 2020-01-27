@@ -1,28 +1,20 @@
-import React from 'react';
-import './RenderMoviesWindow.scss'
-import MovieItem from '../movieItem/MovieItem'
+import React, { Component } from "react";
+import Popular from  '../categories/popular/Popular';
+import "./RenderMoviesWindow.scss";
+// import MovieItem from "../movieItem/MovieItem";
 
+// import Popular from "../categories/Popular";
+// import TopRated from "../categories/TopRated";
+// import Upcoming from "../categories/Upcoming";
 
-
-
-
-function RenderMoviesWindow() {
-	return (
-		<div className='renderMoviesWindow'>
-	
-		<MovieItem />
-		<MovieItem />
-		<MovieItem />
-		<MovieItem />
-		<MovieItem />
-		<MovieItem />
-		<MovieItem />
-		<MovieItem />
-		<MovieItem />
-		<MovieItem />
-		<MovieItem />
-		
-		</div>
-	)
+class RenderMoviesWindow extends Component {
+    render() {
+        return (
+            <div className="renderMoviesWindow">
+                <Popular />
+            </div>
+        );
+    }
 }
-export default RenderMoviesWindow
+
+export default RenderMoviesWindow;

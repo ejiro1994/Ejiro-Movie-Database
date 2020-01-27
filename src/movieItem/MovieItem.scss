@@ -87,7 +87,9 @@
 }
 
 .movie-item .wrapper {
-    background: url(https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg)
+    background: url(
+        // https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg
+    )
         center/cover no-repeat;
 }
 .movie-item .wrapper:hover .menu-content span {
