@@ -4,7 +4,7 @@ import MovieItem from '../../movieItem/MovieItem'
 
 const All = () => {
 	return (
-		<div>
+		<>
 		<MovieItem />
 		<MovieItem />
 		<MovieItem />
@@ -12,12 +12,10 @@ const All = () => {
 		<MovieItem />
 		<MovieItem />
 		<MovieItem />
-		<MovieItem />
-		<MovieItem />
-		<MovieItem />
-		<MovieItem />
+	
 
-		</div>
+
+		</>
 	);
 }
 

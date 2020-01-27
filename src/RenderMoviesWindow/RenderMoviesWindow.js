@@ -1,18 +1,25 @@
 import React, { Component } from "react";
-import Popular from  '../categories/popular/Popular';
-import "./RenderMoviesWindow.scss";
-// import MovieItem from "../movieItem/MovieItem";
 
-// import Popular from "../categories/Popular";
-// import TopRated from "../categories/TopRated";
-// import Upcoming from "../categories/Upcoming";
+import NavigationTop from '../navigation/top/NavigationTop'
+import NavigationLeft from '../navigation/left/NavigationLeft'
+import NavigationRight from '../navigation/right/NavigationRight'
+import "./RenderMoviesWindow.scss";
+
 
 class RenderMoviesWindow extends Component {
+    constructor(props) {
+        super(props)
+        
+    }
+
     render() {
         return (
+            <>
+            <NavigationTop click={this.props.click}/>
             <div className="renderMoviesWindow">
-                <Popular />
+                {this.props.children}
             </div>
+            </>
         );
     }
 }
