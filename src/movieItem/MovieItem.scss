@@ -6,7 +6,8 @@
 .card {
     // float: left;
     // padding: 0 1.7rem;
-	width: 100%;
+    width: 100%;
+    font-size: 11px
 }
 .card .menu-content {
     margin: 0;
@@ -27,7 +28,7 @@
 .card .menu-content a {
 	color: #fff;
 	// line-height: 2px;
-	// font-size: 1rem;
+	// font-size: .5rem;
 }
 .card .menu-content span {
     position: absolute;
@@ -50,6 +51,9 @@
 .card .wrapper:hover .data {
     -webkit-transform: translateY(0);
     transform: translateY(0);
+    opacity:1;
+    background: linear-gradient(to right, rgba(15, 32, 39, 0.692), rgb(32, 58, 67), rgba(44, 83, 100, 0.537));
+    
 }
 .card .data {
     position: absolute;
@@ -61,6 +65,7 @@
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s;
+    opacity: 0;
 }
 .card .data .content {
     padding: 1em;

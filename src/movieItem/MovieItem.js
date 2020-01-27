@@ -1,16 +1,20 @@
 import React from "react";
 import "./MovieItem.scss";
 
-function MovieItem() {
+const MovieItem = ({ movie }) => {
+
+    let bg = { background: `url(https://image.tmdb.org/t/p/w500/${movie.poster_path}) center/cover no-repeat` }
+
+    // console.log(bg);
     return (
         // <div className="movieCard">
         <div className="movie-item card">
-            <div className="wrapper">
+            <div className="wrapper" style={bg}>
                 <div className="header">
                     <div className="date">
-                        <span className="day">Date</span>
-                        <span className="month">Of</span>
-                        <span className="year">Release</span>
+                        <span className="day">{ new Date(movie.release_date).toString().substring(7,10)}</span>
+                        <span className="month">{ new Date(movie.release_date).toString().substring(3,7)}</span>
+                        <span className="year">{ new Date(movie.release_date).toString().substring(10,15)}</span>
                     </div>
                     <ul className="menu-content">
                         <li>
@@ -22,13 +26,10 @@ function MovieItem() {
                     <div className="content">
                         <span className="author">category</span>
                         <h1 className="title">
-                            <a href="/">Title of movie</a>
+                            <a href="/">{movie.title}</a>
                         </h1>
                         <p className="text">
-                            description do excepteur amet excepteur incididunt
-                            do exercitation tempor consequat mollit officia ad
-                            voluptate. Magna veniam sunt sunt enim enim ex elit
-                            eiusmod. Esse
+                            {movie.overview.substring(0,100)}...
                         </p>
                         <a href="/" className="button">
                             Read more
@@ -37,7 +38,7 @@ function MovieItem() {
                 </div>
             </div>
         </div>
-        // </div>
+
     );
 }
 

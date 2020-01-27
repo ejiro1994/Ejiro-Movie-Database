@@ -1,10 +1,11 @@
 import React from "react";
-import "./NavigationTop.scss";
+import "./Navigation.scss";
 
-function NavigationTop({ click }) {
+function Navigation({ click }) {
 
 
     return (
+        <>
         <nav className="topNav">
             <ul className="navCategories">
 
@@ -35,6 +36,15 @@ function NavigationTop({ click }) {
 
             </ul>
         </nav>
+        <div className='navLeft'>
+			
+            </div>
+        <div className='navRight'>
+			
+            </div>
+
+        </>
+
     );
 }
-export default NavigationTop;
+export default Navigation;
