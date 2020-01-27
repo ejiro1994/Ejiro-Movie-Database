@@ -8,6 +8,7 @@ const MovieItem = ({ movie }) => {
     // console.log(bg);
     return (
         // <div className="movieCard">
+        <a href="/">
         <div className="movie-item card">
             <div className="wrapper" style={bg}>
                 <div className="header">
@@ -24,7 +25,7 @@ const MovieItem = ({ movie }) => {
                 </div>
                 <div className="data">
                     <div className="content">
-                        <span className="author">category</span>
+                        <span className="author" style={{fontWeight: 600, color: '#a7ff83'}}>Rating {movie.vote_average}</span>
                         <h1 className="title">
                             <a href="/">{movie.title}</a>
                         </h1>
@@ -38,6 +39,8 @@ const MovieItem = ({ movie }) => {
                 </div>
             </div>
         </div>
+
+        </a>
 
     );
 }
